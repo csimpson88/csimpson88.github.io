@@ -1,4 +1,44 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+author_profile: false
+date: 2025-04-01T13:33:00-6:00
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.2"
+  overlay_image: /assets/images/delaunay/diamond-airfoil.png
+  actions:
+    - label: "About Me"
+      url: /about/
+  caption: "2D diamond airfoil CFD mesh after adjoint-based mesh adaptation, colored by pressure."
+featured_projects:
+  - image_path: /assets/images/barycentric/barycentric-colors-blackfill.png
+    title: Barycentric Coordinates
+    excerpt: Barycentric coordinates are fun.
+    url: /posts/barycentric-coordinates
+
+featured_posts:
+  - image_path: /assets/images/barycentric/barycentric-colors-blackfill.png
+    title: Barycentric Coordinates
+    excerpt: Barycentric coordinates are fun.
+    url: /posts/barycentric-coordinates
+  - image_path: /assets/images/delaunay/diamond-airfoil.png
+    title: Delaunay Triangulation
+    excerpt: Delaunay triangulation is fun.
+    url: /posts/delaunay-triangulation
+  - image_path: /assets/images/orr-sommerfeld/960px-1915ca_abger_fluegel_(cropped_and_mirrored).jpg
+    title: Derivation and Nondimensionalization of the Orr-Sommerfeld Equation
+    excerpt: Viscous flows are not fun.
+    url: /posts/orr-sommerfeld
 ---
+
+<h1>
+    Featured Projects
+</h1>
+
+{% include feature_row id="featured_projects" %}
+
+<h1>
+    Featured Posts
+</h1>
+
+{% include feature_row id="featured_posts" %}
